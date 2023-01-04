@@ -47,7 +47,7 @@ public class CdssTab extends PatientDashboardTabExt {
 
 	@Override
 	public String getPortletUrl() {
-		return null;
+		return "cdssTab";
 	}
 	
 }

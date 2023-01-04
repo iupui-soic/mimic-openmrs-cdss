@@ -22,33 +22,22 @@
 
 	<!-- Add here beans related to the web context -->
 
-	 
-	<!-- Annotation based controllers -->
-	<bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping"/>
-	
 	<context:component-scan base-package="org.openmrs.module.cdss.web.controller" />
- 	<bean id="cdssUrlMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+
+    <bean id="cdssTabUrlMapping"  class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+        <property name="order">
+            <value>2</value>
+        </property>
         <property name="mappings">
             <props>
-                <prop key="module/${project.parent.artifactId}/cdss.form">cdssController</prop>
+                <prop key="**/cdssTab.portlet">cdssTabController</prop>
             </props>
         </property>
     </bean>
-    
 
-    <bean id="cdssController" class="${project.parent.groupId}.${project.parent.artifactId}.web.controller.CdssController" >
-        <property name="sessionForm">
-            <value>true</value>
-        </property>
-        <property name="commandName">
-            <value>brand</value>
-        </property>
-        <property name="successView">
-            <value>/module/${project.parent.artifactId}/cdss.form</value>
-        </property>
-        <property name="formView">
-            <value>/module/${project.parent.artifactId}/cdssForm</value>
-        </property>
+    <bean id="cdssTabController"
+          class="${project.parent.groupId}.${project.parent.artifactId}.web.controller.CdssTabController">
     </bean>
+
 		
 </beans>

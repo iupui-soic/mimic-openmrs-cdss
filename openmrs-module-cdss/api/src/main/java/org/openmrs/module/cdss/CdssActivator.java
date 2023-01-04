@@ -15,55 +15,27 @@ package org.openmrs.module.cdss;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.openmrs.module.ModuleActivator;
+import org.openmrs.module.BaseModuleActivator;
 
 /**
  * This class contains the logic that is run every time this module is either started or stopped.
  */
-public class CdssActivator implements ModuleActivator {
+public class CdssActivator extends BaseModuleActivator {
 	
 	protected Log log = LogFactory.getLog(getClass());
-		
+
 	/**
-	 * @see ModuleActivator#willRefreshContext()
+	 * @see org.openmrs.module.Activator#startup()
 	 */
-	public void willRefreshContext() {
-		log.info("Refreshing CDSS Module");
-	}
-	
-	/**
-	 * @see ModuleActivator#contextRefreshed()
-	 */
-	public void contextRefreshed() {
-		log.info("CDSS Module refreshed");
-	}
-	
-	/**
-	 * @see ModuleActivator#willStart()
-	 */
-	public void willStart() {
+	public void startup() {
 		log.info("Starting CDSS Module");
 	}
-	
+
 	/**
-	 * @see ModuleActivator#started()
+	 * @see org.openmrs.module.Activator#shutdown()
 	 */
-	public void started() {
-		log.info("CDSS Module started");
-	}
-	
-	/**
-	 * @see ModuleActivator#willStop()
-	 */
-	public void willStop() {
-		log.info("Stopping CDSS Module");
-	}
-	
-	/**
-	 * @see ModuleActivator#stopped()
-	 */
-	public void stopped() {
-		log.info("CDSS Module stopped");
+	public void shutdown() {
+		log.info("Shutting down CDSS Module");
 	}
 		
 }
