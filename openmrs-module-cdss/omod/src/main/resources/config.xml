@@ -25,7 +25,20 @@
         <point>org.openmrs.patientDashboardTab</point>
         <class>${project.parent.groupId}.${project.parent.artifactId}.extension.html.CdssTab</class>
     </extension>
-		
+
+    <!-- Settings -->
+    <globalProperty>
+        <property>cdss.dashboard.token</property>
+        <defaultValue></defaultValue>
+        <description>The token to authenticate jupyter notebook</description>
+    </globalProperty>
+
+    <!-- Privileges -->
+    <privilege>
+        <name>Run Cdss</name>
+        <description>The user can access the CDSS iPython Dashboard</description>
+    </privilege>
+
     <!-- Internationalization -->
     <!-- All message codes should start with @MODULE_ID@.* -->
     <messages>

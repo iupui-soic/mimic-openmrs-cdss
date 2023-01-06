@@ -42,7 +42,7 @@ public class CdssTab extends PatientDashboardTabExt {
 
 	@Override
 	public String getRequiredPrivilege() {
-		return null;
+		return "Run Cdss";
 	}
 
 	@Override
