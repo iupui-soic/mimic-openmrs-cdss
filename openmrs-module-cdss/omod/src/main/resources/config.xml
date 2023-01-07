@@ -6,15 +6,15 @@
     <id>cdss</id>
     <name>MIMIC OpenMRS CDSS</name>
     <version>1.0.0</version>
-    <package>org.openmrs.module.@MODULE_ID@</package>
+    <package>org.openmrs.module.cdss</package>
     <author>Saptarshi P</author>
     <description>
         A clinical decision support module based on automatic cohorts and machine learning
     </description>
     <activator>${project.parent.groupId}.${project.parent.artifactId}.CdssActivator</activator>
-    <!-- <updateURL>https://dev.openmrs.org/modules/download/@MODULE_ID@/update.rdf</updateURL> -->
+
     <!-- /Base Module Properties -->
-	    <require_version>1.5.0.7125</require_version>
+    <require_version>1.5.0.7125</require_version>
 
     <aware_of_modules>
         <aware_of_module>org.openmrs.module.legacyui</aware_of_module>
@@ -40,7 +40,7 @@
     </privilege>
 
     <!-- Internationalization -->
-    <!-- All message codes should start with @MODULE_ID@.* -->
+    <!-- All message codes should start with cdss.* -->
     <messages>
         <lang>en</lang>
         <file>messages.properties</file>
