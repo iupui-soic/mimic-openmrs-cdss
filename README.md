@@ -28,6 +28,9 @@ You will have to manually download the MIMIC-IV v1.4 csv.gz files prior to runni
 >: Ensure that you have at least 128 GB of RAM, Quad-core CPU, 200+ GB of disk space to be able to import the data 
 > and run the cdss dashboard appropriately.
 
+> Install Jupyter Notebook Params extension: https://github.com/manics/jupyter-notebookparams <br/>
+> Install Jupyter Dashboard extension: https://github.com/jupyter-attic/dashboards (TODO: upgrade to Voila)
+
 This assumes that you are doing a clean installation of OpenMRS without any test data. Additional deployment
 considerations are ignored. The `/data` notebooks will overwrite any existing data. So, use carefully.
 Steps:
