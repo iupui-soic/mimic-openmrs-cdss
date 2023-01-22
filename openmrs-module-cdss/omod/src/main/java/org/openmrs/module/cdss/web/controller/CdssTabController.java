@@ -14,8 +14,19 @@
 package org.openmrs.module.cdss.web.controller;
 
 import org.openmrs.web.controller.PortletController;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
 
+import javax.servlet.http.HttpServletRequest;
+import java.util.Map;
+
+@Controller
+@RequestMapping("**/cdssTab.portlet")
 public class CdssTabController extends PortletController {
-
-
+    @SuppressWarnings("unchecked")
+    @Override
+    protected void populateModel(HttpServletRequest request, Map<String, Object> model) {
+        Integer patientId = Integer.parseInt(request.getParameter("patientId"));
+        model.put("patientId", patientId);
+    }
 }
