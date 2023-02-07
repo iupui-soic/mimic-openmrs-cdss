@@ -21,6 +21,7 @@ Legacy UI patient dashboard tab that can do the following:
 You will have to manually download the MIMIC-IV v1.4 csv.gz files prior to running the notebooks in the `/data` folder
  - `/data` (notebooks to import data from MIMIC-IV csv to OpenMRS MySQL database)
  - `/cdss` (notebooks implementing an iPython dashboard)
+ - `/model_evaluation` (notebooks and files containing the SQL queries to extract 10k patient's data from MySQL and ML model evaluation codes)
  - `/openmrs-module-cdss` (OpenMRS module that integrates iPython dashboard into Legacy UI patient dashboard)
 
 ### How to run
