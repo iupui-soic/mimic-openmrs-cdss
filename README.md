@@ -50,7 +50,7 @@ Steps:
    Manage Modules
 9. Go to Patient dashboard after searching for patient and play along!!
 
-### Screenshots
+### How to run the CDSS Dashboard:
 
 1.	Log in Credentials in the screen that looks like below:
 a.	Username: demo_user
