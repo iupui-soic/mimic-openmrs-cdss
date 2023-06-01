@@ -58,17 +58,16 @@ Steps:
 ![image](https://github.com/iupui-soic/mimic-openmrs-cdss/assets/115053509/a54556d2-7062-4690-8d1e-71041b4e07d6)
 ![image](https://github.com/iupui-soic/mimic-openmrs-cdss/assets/115053509/18b6bd0c-aa51-4767-bb07-f155e9ecbccc)
 
-2.	After logging in you will see a page like this.
-3.	Go the tab that says “Find/Create Patient”.
+2.	After logging in you will see a page like this. Go the tab that says “Find/Create Patient”.
 ![image](https://github.com/iupui-soic/mimic-openmrs-cdss/assets/115053509/9e0552f1-f859-49f3-a719-c1681c38aa29)
 
-4.	Search for a mimic patient/any patient in the “Patient Identifier or Patient Name”.
+3.	Search for a mimic patient/any patient in the “Patient Identifier or Patient Name”.
 ![image](https://github.com/iupui-soic/mimic-openmrs-cdss/assets/115053509/8ba804bd-232e-4acf-9155-65e005349dc9)
 
-5.	After searching for the patient, you will see a window which appears like the picture below, and you can select the specific patient for whom you want to run the ML analysis by clicking on it.
+4.	After searching for the patient, you will see a window which appears like the picture below, and you can select the specific patient for whom you want to run the ML analysis by clicking on it.
 ![image](https://github.com/iupui-soic/mimic-openmrs-cdss/assets/115053509/50ec01b9-bfc3-47f5-b392-ba8b94d91266)
 
-6. Once you click on it you will see a page that looks like this, then you have click on the “Clinical Decision support System” tab.
+5. Once you click on it you will see a page that looks like this, then you have click on the “Clinical Decision support System” tab.
 ![image](https://github.com/iupui-soic/mimic-openmrs-cdss/assets/115053509/ffb80bac-73ff-401c-b629-5c703feff6ad)
 
 
