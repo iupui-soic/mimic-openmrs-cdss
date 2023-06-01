@@ -51,6 +51,7 @@ Steps:
 9. Go to Patient dashboard after searching for patient and play along!!
 
 ### How to run the CDSS Dashboard:
+> Go to the link: https://b691.us/openmrs/
 
 1.	Log in Credentials in the screen that looks like below:
  - 	Username: `demo_user`
