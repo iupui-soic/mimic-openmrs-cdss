@@ -71,6 +71,8 @@ Steps:
 5. Once you click on it you will see a page that looks like this, then you have click on the “Clinical Decision support System” tab.
 ![image](https://github.com/iupui-soic/mimic-openmrs-cdss/assets/115053509/ffb80bac-73ff-401c-b629-5c703feff6ad)
 
+6. Upon selection the results will look similar to the below picture.
+![image](https://github.com/iupui-soic/mimic-openmrs-cdss/assets/115053509/4a4f8bab-ab02-4157-bde3-84411107edff)
 
 ### Acknowledgements
 The project started as `@ReginaMerine`'s INFO-B691 Capstone project 
