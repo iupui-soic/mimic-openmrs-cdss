@@ -53,8 +53,8 @@ Steps:
 ### How to run the CDSS Dashboard:
 
 1.	Log in Credentials in the screen that looks like below:
- - 	Username: demo_user
- - 	Password: User@123
+ - 	Username: `demo_user`
+ - 	Password: `User@123`
 ![image](https://github.com/iupui-soic/mimic-openmrs-cdss/assets/115053509/a54556d2-7062-4690-8d1e-71041b4e07d6)
 ![image](https://github.com/iupui-soic/mimic-openmrs-cdss/assets/115053509/18b6bd0c-aa51-4767-bb07-f155e9ecbccc)
 
