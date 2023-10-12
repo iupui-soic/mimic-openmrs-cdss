@@ -1,0 +1,9 @@
+SQL Queries to void patient IDs to keep only 10k dataset
+Person Table
+1.	UPDATE person SET VOIDED = CASE WHEN person_id IN (SELECT patient_id FROM (SELECT DISTINCT patient_id FROM encounter_diagnosis WHERE diagnosis_coded IN (1385187, 1385109, 1384870, 1384841, 1384995, 1397715, 1384886, 1474651, 1385083, 1385121) ORDER BY patient_id DESC LIMIT 12080) a) THEN 0 ELSE 1 END;
+Person_Name Table
+2.	UPDATE person_name SET VOIDED = CASE WHEN person_id IN (SELECT patient_id FROM (SELECT DISTINCT patient_Id FROM encounter_diagnosis WHERE diagnosis_coded IN (1385187, 1385109, 1384870, 1384841, 1384995, 1397715, 1384886, 1474651, 1385083, 1385121) ORDER BY patient_id DESC LIMIT 12080 ) a) THEN 0 ELSE 1 END;
+Patient Table
+3.	UPDATE patient SET voided = 1 WHERE patient_id IN (SELECT DISTINCT patient_id FROM encounter_diagnosis WHERE diagnosis_coded IN (1385187, 1385109, 1384870, 1384841, 1384995, 1397715, 1384886, 1474651, 1385083, 1385121) ORDER BY patient_id DESC LIMIT 12080) a) THEN 0 ELSE 1 END;
+Patient_Identifier Table
+4.	UPDATE patient_identifier SET voided = 1 WHERE patient_id IN (SELECT DISTINCT patient_id FROM encounter_diagnosis WHERE diagnosis_coded IN (1385187, 1385109, 1384870, 1384841, 1384995, 1397715, 1384886, 1474651, 1385083, 1385121) ORDER BY patient_id DESC LIMIT 12080)a) THEN 0 ELSE 1 END;
